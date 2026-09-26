@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+"`napiport.txt"
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+UserSettings/
+*.sln
+*.csproj
+.vsconfig

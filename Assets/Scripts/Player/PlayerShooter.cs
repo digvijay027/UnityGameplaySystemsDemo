@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 
 public class PlayerShooter : MonoBehaviour
 {
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;
+
+    /// <summary>Fired each time the player shoots.</summary>
+    public event Action OnShoot;
 
     private Camera mainCamera;
 
@@ -46,10 +50,12 @@ public class PlayerShooter : MonoBehaviour
 
     private void Shoot()
     {
-        Projectile projectile = Instantiate(
+        Instantiate(
             projectilePrefab,
             firePoint.position,
             firePoint.rotation
         );
+
+        OnShoot?.Invoke();
     }
-}
+}

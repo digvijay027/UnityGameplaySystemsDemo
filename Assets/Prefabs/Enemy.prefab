@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2031537091196562323}
   - component: {fileID: 2031537091196562321}
   - component: {fileID: 2031537091196562322}
+  - component: {fileID: 1223931551802318400}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -146,3 +147,15 @@ MonoBehaviour:
   moveSpeed: 2
   contactDamage: 10
   damageCooldown: 1
+--- !u!114 &1223931551802318400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031537091196562328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bb9a492720f9144a4a7ffc9094cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

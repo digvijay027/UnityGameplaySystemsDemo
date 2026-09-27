@@ -26,7 +26,10 @@ public class Projectile : MonoBehaviour
         {
             enemyHealth.TakeDamage(damage);
 
+            if (EffectsManager.Instance != null)
+                EffectsManager.Instance.PlayImpact(transform.position);
+
             Destroy(gameObject);
         }
     }
-}
+}
